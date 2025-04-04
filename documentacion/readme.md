@@ -1,13 +1,14 @@
-# 🚀 Nombre del Proyecto 🚀
+# 🚀 UF1467_ExamenPractico 🚀
 
-Breve descripción del proyecto.  
-Ejemplo: Aplicación web para gestionar tareas con autenticación de usuarios y funcionalidades CRUD.
-
+Es la creación de un repositorio donde esta subido el examen practico de la unidad UF1467.
+En el cual hemos corregido varios errores en un HTML, CSS y Javascript
+Hemos creado un fichero CSV, excel, un fichero word y un PDF.
 ---
 
 ## 📋 Tabla de Contenidos
 
-- [🚀 Nombre del Proyecto 🚀](#-nombre-del-proyecto-)
+- [🚀 UF1467\_ExamenPractico 🚀](#-uf1467_examenpractico-)
+  - [Hemos creado un fichero CSV, excel, un fichero word y un PDF.](#hemos-creado-un-fichero-csv-excel-un-fichero-word-y-un-pdf)
   - [📋 Tabla de Contenidos](#-tabla-de-contenidos)
   - [📦 Instalación](#-instalación)
     - [Requisitos](#requisitos)
@@ -27,20 +28,29 @@ Ejemplo: Aplicación web para gestionar tareas con autenticación de usuarios y 
 
 ### Requisitos
 
-- Python 3.10+
-- pip
+- VS Code
+- Word
+- Excel
+- CSV
 - Git
-- (opcional) Docker
 
 ### Pasos
 
-```bash
-git clone https://github.com/tuusuario/tu-repositorio.git
-cd tu-repositorio
-python -m venv env
-source env/bin/activate  # En Windows: env\Scripts\activate
-pip install -r requirements.txt
-python manage.py runserver
+>[!NOTE]
+>Corregimos el bucle for
+
+```javascript
+for (let i = 1; i <= 1000; i++) { 
+      
+      const fecha = generarFechaAleatoria();
+      const cantidad = Math.floor(Math.random() * 10) + 1;
+      const producto = productos[Math.floor(Math.random() * productos.length)];
+      const precioUnitario = (Math.random() * 90 + 10).toFixed(2); // entre 10.00 y 100.00
+      const importe = (cantidad * precioUnitario).toFixed(2);
+
+      const fila = [fecha, cantidad, `"${producto}"`, importe].join(",");
+      filas.push(fila);
+    }
 ```
 
 ---
@@ -55,35 +65,34 @@ http://localhost:8000/
 
 ### Funcionalidades principales:
 
-- Registro e inicio de sesión
-- CRUD de tareas
-- Filtrado por estado
-- API RESTful
+- Aprobar el examen del módulo UF1467
 
 ---
 
 ## 🧰 Tecnologías
 
-- **Backend:** Django, Django REST Framework
-- **Frontend:** HTML, Bootstrap
-- **Base de Datos:** SQLite / PostgreSQL
-- **Extras:** Docker, dotenv
+- **Backend:** Javascript
+- **Frontend:** HTML, CSS
+- **Extras:** Excel, Word
 
 ---
 
 ## 📁 Estructura del Proyecto
 
 ```
-proyecto/
-├── app/
-│   ├── models.py
-│   ├── views.py
-│   ├── urls.py
+UF1467_EXAMENPRACTICO/
+├── codigo/
+│   ├── index.html
+│   ├── main.js
+│   ├── style.css
 │   └── ...
-├── templates/
-├── static/
-├── manage.py
-└── requirements.txt
+├── documentacion/
+│   ├── datos.xlsx
+│   ├── readme.md
+│   ├── UF1467_ExamenPractico.docx
+│   ├── UF1467_ExamenPractico.pdf
+│   ├── ventas_1000_resgistro.csv
+│   └── ...
 ```
 
 ---
@@ -102,14 +111,14 @@ proyecto/
 
 ## 🪪 Licencia
 
-Este proyecto está licenciado bajo la licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más información.
+Este proyecto no tiene licencia. Consulta el archivo [LICENSE](LICENSE) para más información.
 
 ---
 
 ## 👤 Autor
 
-**Tu Nombre**  
-GitHub: [@tuusuario](https://github.com/tuusuario)
+**David Gutierrez Ramos**  
+GitHub: [@DaguraBCN](https://github.com/DaguraBCN)
 
 ---
 
@@ -120,4 +129,3 @@ GitHub: [@tuusuario](https://github.com/tuusuario)
 - [x] CRUD de tareas
 - [ ] Autenticación avanzada
 - [ ] Despliegue en producción
-
