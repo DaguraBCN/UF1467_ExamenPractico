@@ -1,0 +1,32 @@
+body {
+    font-family: 'Segoe UI', sans-serif;  /* Escribimos bien fontfamily */
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 40px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+  } /* Cerramos la llave de h2 */
+
+  button { /* Escribimos bien buttom */
+    background-color: blue; /* Cambiamos el color de fondo azul a blue */
+    border: none;
+    padding: 12px 24px;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Quitamos la s de transitions */
+  } /* Cerramos la llave de button */
+
+  button:hover { /* Escribimos bien buttom:Onhover */
+    background-color: #2980b9;
+  }
+
+  button:active {
+    transform: scale(0.98);
+  }
